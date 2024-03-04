@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1><img src="img/logo.jpg" alt="Sistema de encriptado"></h1>
+        </div>
+    </header>
+    <main>
+        <form class="container">
+            <div class="textIn">
+                <textarea  placeholder="Puedes escribir el mensaje aqui" id="msg-cifrar" class="msgIn"></textarea>
+                <div class="Parrafo">
+                    <p>Usa solo letras minusculas sin acentos o caracteres</p>
+                </div>
+                <div class="botones">
+                    <!--<p class="Parrafo">Usa solo letras minusculas sin acentos o caracteres</p>-->
+                    <button class="btn Encriptar" type="button" value="Encriptando" id="btn-cifrar" onclick="btnCifrar()">Encriptar</button>
+                    <button class="btn Desencriptar" type="button" value="Desencriptando" id="btn-descifrar" onclick="btnDescifrar()">Desencriptar</button>
+                </div>
+            </div>
+            <div>
+                <div class="textOut">
+                    <textarea placeholder="Aqui se mostrara el mensaje encriptado" id="msg-out" class="msgOut"></textarea>
+                </div>
+
+            </div>
+        </form>
+    </main>
+    <footer>
+        <img src="img/logo2.jpg" alt="Sistema de encriptacion">
+        <p class="copyri">&copy copyright Luis Elías Jiménez Guardado</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
